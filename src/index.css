@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+  --color-leather: #8B6F47;
+  --color-beige: #F5F1E8;
+  --color-dark: #1A1A1A;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Timeline Animations */
+@keyframes lineGlow {
+  0% { box-shadow: 0 0 5px #8B6F4755; }
+  50% { box-shadow: 0 0 15px #8B6F4799; }
+  100% { box-shadow: 0 0 5px #8B6F4755; }
+}
+
+.timeline-line-glow {
+  animation: lineGlow 3s infinite ease-in-out;
+}
+
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.is-visible {
+  opacity: 1 !important;
+  transform: translate(0, 0) !important;
+}
