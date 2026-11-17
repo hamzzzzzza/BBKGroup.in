@@ -440,7 +440,7 @@ const App = () => {
            </div>
         </div>
         <div className="max-w-7xl mx-auto mt-24 pt-12 border-t border-dark/5 px-6 md:px-12 flex justify-between text-xs uppercase tracking-widest text-dark/30 font-bold">
-           <span>© 2024 BBK Group</span>
+           <span>© 2026 BBK Group</span>
            <span>Crafted in India</span>
         </div>
       </footer>
